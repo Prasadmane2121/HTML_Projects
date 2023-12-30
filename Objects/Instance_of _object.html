@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const spcification=new Object()
+        spcification.gear=6
+        spcification.speed='160kmph'
+        spcification.milage='40kmpl'
+
+        var bike=new Object()
+        bike.name='mt-15'
+        bike.compony='yamaha'
+        bike.price=1700000
+        bike.spl=spcification
+
+        document.write(`name : ${bike.name}<br> compony : ${bike.compony}<br>`)
+        document.write(`Gear : ${bike.spl.gear} <br> speed : ${bike.spl.speed}<br> milage : ${bike.spl.milage}`)
+
+        document.write(`<h4>Array with Object</h4>`)
+        let product=[
+            {id:21, name: 'moblie' , compony:'samsung'},
+            {id:22, name: 'bike' , compony:'kawasaki'},
+            {id:23, name: 'laptop' , compony:'asus'}
+        ]
+        product.forEach((a)=>{
+            document.write(`<br>Id : ${a.id} name : ${a.name} compony : ${a.compony}`)
+        })
+    </script>
+</body>
+</html>
