@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+</head>
+<body>
+    <script>
+        // const need to intilize compulsary otherwise it gives error
+        // Object Literal method
+        document.write("<h2>Object Literal method</h4>")
+            document.write(`<h4>Simple Object</h4>`)
+        const a={
+            id:21,
+            name:'prasasd',
+            no:7972995504,
+            mail:'prasad@gmail.com'
+        }
+        document.write(`
+         Id : ${a.id} <br> Name : ${a.name} <br> Mail : ${a.mail}<br> Number : ${a.no}
+        `)
+        //refferece Object
+        document.write('<h4>refference Object</h4>')
+        const adr={
+            street:'bramhanwadi',
+            city:'satara'
+
+        }
+        const student={
+            roll:1,
+            name:"tony",
+            address:adr
+        }
+        document.write(`Roll : ${student.roll} <br>Name: ${student.name} <br>Area: ${student.address.street} <br>city :  ${student.address.city}
+        `)
+        document.write(`<h4> object in object</h4>`)
+        const product={
+            name:"box",
+            compony:"xyz",
+            size :{
+                height:4,
+                width:5,
+                weight:'2kg'
+            }
+        }
+        document.write(`name : ${product.name} <br>
+        compony : ${product.compony} <br> product height : ${product.size.height}<br> product width : ${product.size.width} <br> product weight ${product.size.weight}`)
+    </script>
+</body>
+</html>
